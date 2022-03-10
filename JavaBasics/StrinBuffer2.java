@@ -7,7 +7,7 @@ class StrinBuffer2 {
 	{
 
 
-		StringBuffer s = new StringBuffer("Geeksforgeeks");
+		StringBuffer s = new StringBuffer("OngrraphTechnologies");
 
 
 		int p = s.length();
@@ -16,9 +16,9 @@ class StrinBuffer2 {
 		int q = s.capacity();
 
 
-		System.out.println("Length of string GeeksforGeeks="
+		System.out.println("Length of string ="
 						+ p);
 		System.out.println(
-			"Capacity of string GeeksforGeeks=" + q);
+			"Capacity of string =" + q);
 	}
 }
