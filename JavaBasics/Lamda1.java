@@ -6,7 +6,7 @@ class Lamda1 {
 	{
 
 		new Thread(new Runnable() {
-			@Override public void run()
+			 public void run()
 			{
 				System.out.println("New thread created");
 			}
