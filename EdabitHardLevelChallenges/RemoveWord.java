@@ -5,10 +5,8 @@ import java.util.Scanner;
 public class RemoveWord {
     public static String remove(String Sentence, String word){
         if(Sentence.contains(word)){
-            String temp=word +" ";
-            Sentence=Sentence.replaceAll(temp,"");
-            temp=" " +word;
-            Sentence=Sentence.replaceAll(temp, "");
+            String temp=" " +word +" ";
+            Sentence=Sentence.replaceAll(temp," ");
         }
         return Sentence;
     }
