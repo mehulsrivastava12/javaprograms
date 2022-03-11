@@ -29,20 +29,21 @@ public class FactorialOfAnyNumber {
 	
 	public static void main (String[] args)
 	{
-        Scanner s=new Scanner(System.in);
-        System.out.println("Enter The number you want to check");
-		int n = s.nextInt();
-		boolean ans = isFactorial(n);
-		
-		if (ans == true)
-		{
-			System.out.println("Yes");
-		}
-		else
-		{
-			System.out.println("No");
-		}
-	}
+        Scanner s = new Scanner(System.in);
+            System.out.println("Enter The number you want to check");
+            int n = s.nextInt();
+            boolean ans = isFactorial(n);
+            
+            if (ans == true)
+            {
+            	System.out.println("Yes");
+            }
+            else
+            {
+            	System.out.println("No");
+            }
+        }
+
 }
 
 
