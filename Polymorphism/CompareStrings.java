@@ -40,9 +40,8 @@ public class CompareStrings {
         Scanner s=new Scanner(System.in);
         String X=s.nextLine();
         String Y=s.nextLine();
-        int p=compare.strstr(X,Y);
-        String c=compare.strstr(X);
-        System.out.println(p);
+        System.out.println(compare.strstr(X,Y));
+        System.out.println(compare.strstr(X));
     }
 
 }
