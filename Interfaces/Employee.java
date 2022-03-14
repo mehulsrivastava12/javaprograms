@@ -37,7 +37,7 @@ public class Employee{
 	}
 
 
-	@Override public String toString()
+	public String toString()
 	{
 		return "Customer{"
 			+ "Name=" + Name + ", Age=" + Age + '}';
@@ -46,7 +46,7 @@ public class Employee{
 	static class CustomerSortingComparator
 		implements Comparator<Employee> {
 
-		@Override
+
 		public int compare(Employee customer1,
 						Employee customer2)
 		{
