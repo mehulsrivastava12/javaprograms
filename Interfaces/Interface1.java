@@ -26,7 +26,8 @@ class Bicycle implements Vehicle{
         System.out.println("Speed : " +speed+ " gear : " +gear);
     }
 }
-    class Bike implements Vehicle{
+
+class Bike implements Vehicle{
         int speed;
         int gear;
 
