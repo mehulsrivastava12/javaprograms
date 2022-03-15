@@ -20,7 +20,7 @@ class Main12 {
 		Parent obj1 = new Parent();
 		obj1.show();
 
-		Child obj2 = new Child();
+		Parent obj2 = new Child();
 		obj2.show();
 	}
 }
