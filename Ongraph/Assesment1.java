@@ -33,14 +33,8 @@ public class Assesment1 {
             }
         }
         Collections.sort(ProfitList);
-
-        int element=ProfitList.get(49);
-        int element1=ProfitList.get(48);
-        int element2=ProfitList.get(47);
-        
-        System.out.println();
-        System.out.println(element);
-        System.out.println(element1);
-        System.out.println(element2);
+        System.out.println(ProfitList.get(49));
+        System.out.println(ProfitList.get(48));
+        System.out.println(ProfitList.get(47));
     }
 }
