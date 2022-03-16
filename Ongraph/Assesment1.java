@@ -33,6 +33,7 @@ public class Assesment1 {
             }
         }
         Collections.sort(ProfitList);
+        System.out.println();
         System.out.println(ProfitList.get(49));
         System.out.println(ProfitList.get(48));
         System.out.println(ProfitList.get(47));
