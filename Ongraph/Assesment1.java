@@ -26,13 +26,12 @@ public class Assesment1 {
                 String[] array = line.split(",");
                 int sell=Integer.parseInt(array[0].trim());
                 int list=Integer.parseInt(array[1].trim());
-                int tax=Integer.parseInt(array[8].trim());
+                int tax=Integer.parseInt(array[array.length-1].trim());
                 int profit=((list-sell)*1000)-tax;
                 ProfitList.add(profit);
                
             }
         }
-        System.out.println(ProfitList.size());
         Collections.sort(ProfitList);
         System.out.println();
         for(int j=ProfitList.size()-1;j>=ProfitList.size()-3;j--){
