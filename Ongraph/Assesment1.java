@@ -17,8 +17,7 @@ public class Assesment1 {
         int i=0;
 
         List<String> lines = Files.readAllLines(filePath, charset);
-    
-        for (i=0;i<51;i++) {
+        for (i=0;i<lines.size()-1;i++) {
             if(i==0){
                 
             }
@@ -30,12 +29,14 @@ public class Assesment1 {
                 int tax=Integer.parseInt(array[8].trim());
                 int profit=((list-sell)*1000)-tax;
                 ProfitList.add(profit);
+               
             }
         }
+        System.out.println(ProfitList.size());
         Collections.sort(ProfitList);
         System.out.println();
-        System.out.println(ProfitList.get(49));
-        System.out.println(ProfitList.get(48));
-        System.out.println(ProfitList.get(47));
+        for(int j=ProfitList.size()-1;j>=ProfitList.size()-3;j--){
+            System.out.println(ProfitList.get(j));
+        }
     }
 }
