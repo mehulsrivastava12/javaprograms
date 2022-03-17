@@ -23,7 +23,7 @@ public class City {
         }
   
         for (Map.Entry<String, Integer> val : hm.entrySet()) {
-            System.out.println(val.getKey() + " has "+ val.getValue() + " cities");
+            System.out.println("State "+ val.getKey() + " has "+ val.getValue() + " cities");
         }
     }
     public static void main(String[] args) throws IOException {
