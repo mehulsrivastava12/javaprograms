@@ -39,7 +39,7 @@ public class Oscar2 {
         catch (Exception e){
            System.out.println(e);
         }
-        System.out.println("Youngest Oscar Award Winner name is "+name2+"in year "+year2+" for the film "+movie2);
-        System.out.println("Eldest Oscar Award Winner name is "+name1+"in year "+year1+" for the film "+movie1);    
+        System.out.println("Youngest Winner name is "+name2+"in year "+year2+" for the film "+movie2);
+        System.out.println("Eldest Winner name is "+name1+"in year "+year1+" for the film "+movie1);    
     }
 }
