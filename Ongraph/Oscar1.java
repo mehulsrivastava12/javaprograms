@@ -17,14 +17,7 @@ public class Oscar1 {
         try(BufferedReader br=new BufferedReader(new FileReader(file))){
             while((line=br.readLine())!=null){
                 l.add(Arrays.asList(line.split(","))); 
-            }
-        }
-        catch(Exception e){
-            e.printStackTrace();
-        }
-        try(BufferedReader cr=new BufferedReader(new FileReader(file))){
-            while((li=cr.readLine())!=null){
-                String[] arr=li.split(",");
+                String[] arr=line.split(",");
                 String age=(arr[4]);
                 Age.add(age);
                 Age.remove("Age");
