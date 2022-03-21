@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -18,7 +17,6 @@ public class Oscar1 {
         try(BufferedReader br=new BufferedReader(new FileReader(file))){
             while((line=br.readLine())!=null){
                 l.add(Arrays.asList(line.split(","))); 
-
             }
         }
         catch(Exception e){
