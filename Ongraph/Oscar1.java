@@ -11,7 +11,6 @@ public class Oscar1 {
     public static void main(String[] args) {
         String file="C:\\Users\\DELL\\Desktop\\oscar_age_male.csv";
         String line;
-        String li;
         List<List<String>> l=new ArrayList<List<String>>();
         List<String> Age=new ArrayList<String>();
         try(BufferedReader br=new BufferedReader(new FileReader(file))){
