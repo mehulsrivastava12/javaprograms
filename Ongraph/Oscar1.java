@@ -39,6 +39,5 @@ public class Oscar1 {
         System.out.println(l.get(min+1));
         System.out.println("Eldest : ");
         System.out.println(l.get(max+1));
-
     }
 }
