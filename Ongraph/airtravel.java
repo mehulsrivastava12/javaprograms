@@ -7,8 +7,10 @@ public class airtravel {
         int i=0;
         String path = "C:\\Users\\DELL\\Desktop\\airtravel.csv";
         String[] arry;
+        int row=0;
         BufferedReader bf = new BufferedReader(new FileReader(path));
         while((n=bf.readLine())!=null){
+            row++;
             arry = n.split(",");
             if(i==0){
                 i++;
@@ -26,9 +28,9 @@ public class airtravel {
             
         }
         System.out.println("Average Of Years: "+"1958"+"  "+"1959"+"  "+"1960");
-        System.out.print("                  "+sumof1958/12);
-        System.out.print("   "+sumof1959/12);
-        System.out.print("   "+sumof1960/12);
+        System.out.print("                  "+sumof1958/row);
+        System.out.print("   "+sumof1959/row);
+        System.out.print("   "+sumof1960/row);
         bf.close();
     }
 }
