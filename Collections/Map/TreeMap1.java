@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 
 import java.util.Map;
+import java.util.SortedMap;
 import java.util.TreeMap;
 
 public class TreeMap1 {
@@ -64,8 +65,21 @@ public class TreeMap1 {
         hm2.replace(127, "PA", "CP");  //Replaces the entry for the specified key only if currently mapped to the specified value.
         
         hm.firstKey(); //Returns the first (lowest) key currently in this sorted map.
+
         hm.lastKey();  //Returns the last (highest) key currently in this sorted map.
-        
+    
+        // Creating the sorted map for map head
+        SortedMap<Integer, String> map_head = new 
+        TreeMap<Integer, String>();
+        map_head = hm.headMap(4);
+
+        // Getting the map head
+        System.out.println("The headmap is: " + map_head);
+
+        // Displaying the submap
+        // using subMap() method
+        System.out.println("The subMap is "
+                           + hm.subMap(126, 128));
     }
 }
 
