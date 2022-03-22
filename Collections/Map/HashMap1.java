@@ -56,11 +56,11 @@ public class HashMap1 {
 
         System.out.println(hm.hashCode());  // Getting the hashcode value for the map
 
-        hm2.replace(1,"CH");  //Replaces the entry for the specified key only if it is currently mapped to some value.
+        hm.replace(1,"CH");  //Replaces the entry for the specified key only if it is currently mapped to some value.
 
-        hm2.remove(128,"OH");  //Removes the entry for the specified key only if it is currently mapped to the specified value.
+        hm.remove(128,"OH");  //Removes the entry for the specified key only if it is currently mapped to the specified value.
 
-        hm2.replace(127, "PA", "CP");  //Replaces the entry for the specified key only if currently mapped to the specified value.
+        hm.replace(127, "PA", "CP");  //Replaces the entry for the specified key only if currently mapped to the specified value.
 
         
     }
