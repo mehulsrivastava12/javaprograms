@@ -8,7 +8,7 @@ public class Oscar2 {
         String file ="C:\\Users\\DELL\\Desktop\\oscar_age_male.csv";
         String line;
         String movie1="",movie2="",name1="",name2="";
-        int max=0,i=0,min=44,year1=0,year2=0;
+        int max=Integer.MIN_VALUE,i=0,min=Integer.MAX_VALUE,year1=0,year2=0;
         HashMap<String,Integer> hm=new HashMap<String,Integer>();
         try (BufferedReader br =new BufferedReader(new FileReader(file))) {
             while((line = br.readLine()) != null){
@@ -30,7 +30,7 @@ public class Oscar2 {
                 else{
                     i=i+1;
                     continue;
-                }                                               
+                }                              
             }
         } 
         catch (Exception e){
