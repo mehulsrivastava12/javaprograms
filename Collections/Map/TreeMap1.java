@@ -62,7 +62,9 @@ public class TreeMap1 {
         hm2.remove(128,"OH");  //Removes the entry for the specified key only if it is currently mapped to the specified value.
 
         hm2.replace(127, "PA", "CP");  //Replaces the entry for the specified key only if currently mapped to the specified value.
-
+        
+        hm.firstKey(); //Returns the first (lowest) key currently in this sorted map.
+        hm.lastKey();  //Returns the last (highest) key currently in this sorted map.
         
     }
 }
