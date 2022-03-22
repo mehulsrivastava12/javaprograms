@@ -2,6 +2,7 @@ package Collections.Map;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.util.Comparator;
 import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
@@ -23,8 +24,15 @@ public class SortedMap1 {
         catch(Exception e){
             e.printStackTrace();
         }
+        Comparator comp = hm.comparator();  // Getting used Comparator in the map using comparator() method
+ 
+        // Printing the comparator value
+        System.out.println("Comparator value: "+ comp);
+
         hm.remove(0); // remove element with a key using remove method
+        
         hm.put(1,"PH");  // Change Value using put method
+        
         for(Map.Entry<Integer,String> e:hm.entrySet()){  //Iterating using for each loop
             System.out.println("Key : " +e.getKey() +" Value : "+e.getValue());
         }
