@@ -27,9 +27,7 @@ public class Oscar1 {
         }
         int min=Age.indexOf(Collections.min(Age));
         int max=Age.indexOf(Collections.max(Age));
-        System.out.println("Youngest : ");
-        System.out.println(l.get(min+1));
-        System.out.println("Eldest : ");
-        System.out.println(l.get(max+1));
+        System.out.println("Youngest : "+l.get(min+1));
+        System.out.println("Eldest : "+l.get(max+1));
     }
 }
