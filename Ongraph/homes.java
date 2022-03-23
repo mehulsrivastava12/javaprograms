@@ -15,11 +15,9 @@ public class homes {
         Charset charset = StandardCharsets.UTF_8;
         ArrayList<Integer> ProfitList=new ArrayList<Integer>();
         int i=0;
-
         List<String> lines = Files.readAllLines(filePath, charset);
         for (i=0;i<lines.size()-1;i++) {
-            if(i==0){
-                
+            if(i==0){             
             }
             else{
                 String line=lines.get(i);
@@ -28,8 +26,7 @@ public class homes {
                 int list=Integer.parseInt(array[1].trim());
                 int tax=Integer.parseInt(array[array.length-1].trim());
                 int profit=((list-sell)*1000)-tax;
-                ProfitList.add(profit);
-               
+                ProfitList.add(profit); 
             }
         }
         Collections.sort(ProfitList);
