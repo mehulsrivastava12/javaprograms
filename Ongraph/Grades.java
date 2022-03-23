@@ -2,7 +2,7 @@ package Ongraph;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.TreeMap;
-public class Grades {
+public class grades {
     public static void main(String[] args) {
         String file ="C:\\Users\\DELL\\Desktop\\grades.csv";
         String line;
