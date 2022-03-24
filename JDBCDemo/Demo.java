@@ -13,6 +13,8 @@ public class Demo {
 
             Statement st=con.createStatement(); //Creating Statement
 
+            st.executeUpdate("INSERT INTO employee VALUES('6','Timy','31','IT')");
+            
             ResultSet rs=st.executeQuery("Select * from employee"); //Executing the query
 
             while(rs.next()){ //Processing the result
