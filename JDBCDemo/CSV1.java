@@ -8,7 +8,7 @@ public class CSV1 {
         String url="jdbc:mysql://localhost:3306/jdbcdemo";
         String user="root";
         String password="Mehul@1234";
-        String path = "airtravel.csv";
+        String path = "CSV Files/airtravel.csv";
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con=DriverManager.getConnection(url, user, password);
