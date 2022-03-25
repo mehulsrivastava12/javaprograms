@@ -10,7 +10,7 @@ public class Demo1 {
             Class.forName("com.mysql.cj.jdbc.Driver"); //Load and register
             Connection con=DriverManager.getConnection(url, user, password); //Establish Connection
             Statement st=con.createStatement(); //Creating Statement
-            ResultSet rs=st.executeQuery("Select * from employee where EmpDept='IT'"); //Executing the query
+            ResultSet rs=st.executeQuery("Select * from employee"); //Executing the query
             while(rs.next()){ //Processing the result
                 System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getInt(3)+" "+rs.getString(4));
             }
