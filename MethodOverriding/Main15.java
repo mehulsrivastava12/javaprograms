@@ -29,7 +29,6 @@ class Child2 extends Parent2 {
 	}
 }
 
-
 class Main15 {
 	public static void main(String[] args)
 	{
@@ -38,4 +37,3 @@ class Main15 {
 		obj1.m2();
 	}
 }
-
