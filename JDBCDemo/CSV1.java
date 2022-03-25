@@ -7,14 +7,14 @@ public class CSV1 {
     public static void main(String[] args) {
         String url="jdbc:mysql://localhost:3306/jdbcdemo";
         String user="root";
-        String password="mehul@1234";
-        String path = "CSV Files/airtravel.csv";
+        String password="Mehul@1234";
+        String path = "CSVFiles/airtravel.csv";
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con=DriverManager.getConnection(url, user, password);
             Statement st=con.createStatement();
-            st.execute("CREATE TABLE air(Month varchar(10),Year1958 int,Year1959 int,Year1960 int);");
-            String sql ="INSERT INTO air(Month,Year1958,Year1959,Year1960) VALUES ( ?, ?, ?, ?)";
+            st.execute("CREATE TABLE air1(Month varchar(10),Year1958 int,Year1959 int,Year1960 int);");
+            String sql ="INSERT INTO air1(Month,Year1958,Year1959,Year1960) VALUES ( ?, ?, ?, ?)";
             PreparedStatement stm = con.prepareStatement(sql);                                               
             String line;
             BufferedReader br =new BufferedReader(new FileReader(path));
