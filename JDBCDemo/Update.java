@@ -15,7 +15,6 @@ public class Update {
             while(rs.next()){
                 System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getInt(3)+" "+rs.getString(4));
             }
-            
         } 
         catch (Exception e) {
             e.printStackTrace();
