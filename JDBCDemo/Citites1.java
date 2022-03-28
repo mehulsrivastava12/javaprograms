@@ -12,8 +12,8 @@ public class Citites1 {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con=DriverManager.getConnection(url, user, password);
             Statement st=con.createStatement();
-            st.execute("CREATE TABLE city(LatD varchar(45), LatM varchar(45), LatS varchar(45),NS varchar(45),LonD varchar(45),LonM varchar(45),LonS varchar(45),EW varchar(45),City varchar(45),State varchar(45));");
-            String sql="INSERT INTO city(LatD,LatM,LatS,NS,LonD,LonM,LonS,EW,City,State) VALUES( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            st.execute("CREATE TABLE city1(LatD varchar(45), LatM varchar(45), LatS varchar(45),NS varchar(45),LonD varchar(45),LonM varchar(45),LonS varchar(45),EW varchar(45),City varchar(45),State varchar(45));");
+            String sql="INSERT INTO city1 VALUES( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
             PreparedStatement stm=con.prepareStatement(sql);
             String line;
             BufferedReader br=new BufferedReader(new FileReader(path));
