@@ -13,8 +13,8 @@ public class CSV1 {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con=DriverManager.getConnection(url, user, password);
             Statement st=con.createStatement();
-            st.execute("CREATE TABLE air1(Month varchar(10),Year1958 int,Year1959 int,Year1960 int);");
-            String sql ="INSERT INTO air1(Month,Year1958,Year1959,Year1960) VALUES ( ?, ?, ?, ?)";
+            st.execute("CREATE TABLE air(Month varchar(10),Year1958 int,Year1959 int,Year1960 int);");
+            String sql ="INSERT INTO air VALUES ( ?, ?, ?, ?)";
             PreparedStatement stm = con.prepareStatement(sql);                                               
             String line;
             BufferedReader br =new BufferedReader(new FileReader(path));
