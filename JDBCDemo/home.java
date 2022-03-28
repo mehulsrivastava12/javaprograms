@@ -14,7 +14,7 @@ public class home {
             Connection con=DriverManager.getConnection(url, user, password);
             Statement st=con.createStatement();
             st.execute("CREATE TABLE home(Sell int,List int,Livings int,Rooms int,Beds int,Baths int,Age int,Acres float,Taxes int);");
-            String sql ="INSERT INTO home(Sell,List,Livings,Rooms,Beds,Baths,Age,Acres,Taxes) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            String sql ="INSERT INTO home VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?)";
             PreparedStatement stm = con.prepareStatement(sql);                                               
             String line;
             BufferedReader br =new BufferedReader(new FileReader(path));
@@ -32,9 +32,9 @@ public class home {
                 stm.setInt(9, Integer.parseInt(data[8].trim()));
                 stm.addBatch();
             }
-          stm.executeBatch();                     
-          con.close();
-          System.out.println("Data Inserted Successfully");
+            stm.executeBatch();                     
+            con.close();
+            System.out.println("Data Inserted Successfully");
         } 
         catch (Exception e) {
             e.printStackTrace();
