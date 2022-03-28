@@ -4,7 +4,7 @@ public class Dbmd{
     public static void main(String args[]){ //Program using method of DatabaseMetaData
         String url="jdbc:mysql://localhost:3306/jdbcdemo";
         String user="root";
-        String password="Mehul@1234"; 
+        String password="mehul@1234"; 
         try{  
             Class.forName("com.mysql.cj.jdbc.Driver");  
             Connection con=DriverManager.getConnection(url,user,password);  
