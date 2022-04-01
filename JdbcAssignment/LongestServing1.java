@@ -1,8 +1,6 @@
 package JdbcAssignment;
-import java.time.LocalDate;
 import java.util.*;
 import java.sql.*;
-import java.time.temporal.ChronoUnit;
 public class LongestServing1 {
     public static void main(String[] args) {
         SortedMap<Long,String> a=new TreeMap<Long,String>();
@@ -14,10 +12,8 @@ public class LongestServing1 {
             ResultSet rs=st.executeQuery("select t.title,t.emp_no,e.from_date,e.to_date "+
             "from dept_emp e JOIN (titles t) ON t.emp_no=e.emp_no;");
             while(rs.next()){
-                LocalDate date1 = LocalDate.parse(rs.getString(3));
-                LocalDate date2 = LocalDate.parse(rs.getString(4));
-                long diff = ChronoUnit.DAYS.between(date1, date2); 
-                String value="Title : "+rs.getString(1)+"\nEmp_NO : "+rs.getInt(2)+"\nDuration : "+diff+" days";
+                long diff=(rs.getDate(4)).getTime()-(rs.getDate(3)).getTime();
+                String value="Title : "+rs.getString(1)+"\nEmp_NO : "+rs.getInt(2)+"\nDuration : "+rs.getDate(3)+" to " +rs.getDate(4)+" days";
                 a.put(diff,value);
             }                                      
             con.close();
